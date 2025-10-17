@@ -1,0 +1,25 @@
+name: GitHub Copilot Project Builder
+
+on:
+  workflow_dispatch:
+    inputs:
+      prompt:
+        description: 'Instruction for Copilot'
+        required: true
+        default: 'Follow the plan in the last PR and build all backend, frontend, and docs folders'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  copilot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run GitHub Copilot Workspace
+        uses: github/copilot-workspace@main
+        with:
+          prompt: ${{ github.event.inputs.prompt }}
