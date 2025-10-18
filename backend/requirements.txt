@@ -1,2 +1,8 @@
 Flask==3.0.0
 flask-cors==4.0.0
+
+# Optional / recommended for AI features (may require significant disk / model downloads):
+# transformers and a backend (torch). Install these only if you intend to enable HF models.
+transformers==4.35.0
+torch>=2.0.0
+textstat==0.8.1
