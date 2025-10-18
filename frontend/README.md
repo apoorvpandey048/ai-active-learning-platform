@@ -10,8 +10,47 @@ React-based frontend for the AI-Powered Active Learning Platform.
 
 ## Setup
 
-Instructions for setting up the frontend will be added here.
+This frontend is a React app. At minimum you'll need Node.js and npm/yarn.
+
+Install dependencies (example using npm):
+
+```bash
+npm install
+```
+
+Install Recharts (used by some components):
+
+```bash
+npm install recharts
+```
 
 ## Components
 
-Component documentation will be added here.
+### LearnerProgress
+
+A responsive chart component showing sample learner metrics (mastery, engagement, accuracy) using Recharts. It includes labels, tooltips, legends, and animations.
+
+Location: `src/components/LearnerProgress.js`
+
+Basic usage:
+
+```jsx
+import React from 'react';
+import LearnerProgress from './src/components/LearnerProgress';
+
+function App() {
+	return (
+		<div>
+			<LearnerProgress />
+		</div>
+	);
+}
+
+export default App;
+```
+
+The component accepts an optional `data` prop to override the built-in sample dataset. Each data point should have the shape:
+
+```js
+{ week: 'Week 1', mastery: 20, engagement: 30, accuracy: 60 }
+```
