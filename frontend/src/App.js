@@ -2,6 +2,8 @@ import React from 'react';
 import LearnerProgress from './components/LearnerProgress';
 import TranscriptSummary from './components/TranscriptSummary';
 import AdaptiveQuiz from './components/AdaptiveQuiz';
+import YouTubeLecture from './components/YouTubeLecture';
+import MyLectures from './components/MyLectures';
 
 export default function App() {
   return (
@@ -10,6 +12,8 @@ export default function App() {
   <LearnerProgress />
   <TranscriptSummary />
   <AdaptiveQuiz />
+  <YouTubeLecture />
+  <MyLectures />
     </div>
   );
 }

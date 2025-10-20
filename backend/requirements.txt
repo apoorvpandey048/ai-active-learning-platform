@@ -5,4 +5,10 @@ flask-cors==4.0.0
 # transformers and a backend (torch). Install these only if you intend to enable HF models.
 transformers==4.35.0
 torch>=2.0.0
-textstat==0.8.1
+textstat==0.7.10
+SQLAlchemy==2.1.2
+requests==2.31.0
+youtube-transcript-api==0.6.2
+python-dotenv==1.0.0
+pyyaml==6.0
+
