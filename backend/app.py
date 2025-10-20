@@ -1,9 +1,19 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.sql import func
+# SQLAlchemy imports are optional at import-time because some Python
+# environments (e.g. very new Python versions) may not be compatible with
+# the installed SQLAlchemy wheel. Import lazily and fall back gracefully.
+try:
+    from sqlalchemy import create_engine
+    from sqlalchemy.orm import sessionmaker
+    from sqlalchemy.sql import func
+    DB_AVAILABLE = True
+except Exception:
+    create_engine = None
+    sessionmaker = None
+    func = None
+    DB_AVAILABLE = False
 import json
 import threading
 import time
@@ -17,10 +27,19 @@ logger = logging.getLogger('backend')
 app = Flask(__name__)
 CORS(app)
 
-# Database setup
+# Database setup (only if SQLAlchemy imported successfully)
 DB_URL = 'sqlite:///ai_active_learning.db'
-engine = create_engine(DB_URL, echo=False)
-SessionLocal = sessionmaker(bind=engine)
+engine = None
+SessionLocal = None
+if DB_AVAILABLE and create_engine is not None and sessionmaker is not None:
+    try:
+        engine = create_engine(DB_URL, echo=False)
+        SessionLocal = sessionmaker(bind=engine)
+    except Exception:
+        # If engine creation fails, treat DB as unavailable but keep app running
+        engine = None
+        SessionLocal = None
+        DB_AVAILABLE = False
 
 try:
     # Import models to ensure tables are registered
@@ -128,6 +147,8 @@ def models_status():
 @app.route('/test-db', methods=['GET'])
 def test_db():
     try:
+        if not DB_AVAILABLE or SessionLocal is None:
+            return jsonify({'db': 'unavailable', 'error': 'Database not configured or unsupported in this environment'}), 503
         from models import User
         session = SessionLocal()
         user = session.query(User).first()
@@ -142,6 +163,8 @@ def init_db_route():
     try:
         # Initialize the database schema using db_init.init_db()
         from db_init import init_db
+        if not DB_AVAILABLE:
+            return jsonify({'error': 'Database not available in this environment'}), 503
         engine = init_db()
         # Log and return success
         print('init-db: database initialized using engine=%s' % (engine,))
@@ -158,6 +181,8 @@ def seed_db_route():
         # is idempotent in the sense that it will create new records each time
         # but will not fail if called multiple times (it uses SQLAlchemy sessions).
         from db_init import seed_questions
+        if not DB_AVAILABLE:
+            return jsonify({'error': 'Database not available in this environment'}), 503
 
         # Call the seeding logic and then report counts back to caller.
         seed_questions()
@@ -237,12 +262,19 @@ def generate_quiz():
     if request.method == 'GET':
         # Return 5 random questions from DB
         try:
+            if not DB_AVAILABLE or SessionLocal is None:
+                raise RuntimeError('DB unavailable')
             from models import Question
             session = SessionLocal()
             qs = session.query(Question).order_by(func.random()).limit(5).all()
             out = []
             for q in qs:
-                out.append({'id': q.id, 'topic': q.topic, 'question_text': q.question_text, 'options': json.loads(q.options_json)})
+                # models may store options differently; best-effort extraction
+                try:
+                    opts = json.loads(getattr(q, 'options', '[]'))
+                except Exception:
+                    opts = []
+                out.append({'id': getattr(q, 'id', None), 'topic': getattr(q, 'topic', None), 'question_text': getattr(q, 'question_text', None), 'options': opts})
             session.close()
             return jsonify({'questions': out})
         except Exception:
@@ -331,6 +363,8 @@ def save_progress():
     engagement = int(payload.get('engagement', 0))
     accuracy = int(payload.get('accuracy', 0))
     try:
+        if not DB_AVAILABLE or SessionLocal is None:
+            return jsonify({'error': 'Database not available in this environment'}), 503
         from models import QuizResult
         session = SessionLocal()
         # Save as a QuizResult with score mapped from mastery (demo mapping)
@@ -353,6 +387,8 @@ def save_lecture():
     transcript = payload.get('transcript')
     summary = payload.get('summary')
     try:
+        if not DB_AVAILABLE or SessionLocal is None:
+            return jsonify({'error': 'Database not available in this environment'}), 503
         from models import Lecture
         session = SessionLocal()
         lec = Lecture(title=title, yt_url=video_url, transcript=transcript, summary=summary)
@@ -368,6 +404,8 @@ def save_lecture():
 @app.route('/my-lectures', methods=['GET'])
 def my_lectures():
     try:
+        if not DB_AVAILABLE or SessionLocal is None:
+            return jsonify({'error': 'Database not available in this environment'}), 503
         from models import Lecture
         session = SessionLocal()
         qs = session.query(Lecture).all()
@@ -383,6 +421,8 @@ def my_lectures():
 @app.route('/analyze-performance', methods=['GET'])
 def analyze_performance():
     try:
+        if not DB_AVAILABLE or SessionLocal is None:
+            return jsonify({'error': 'Database not available in this environment'}), 503
         from models import QuizResult
         session = SessionLocal()
         qs = session.query(QuizResult).all()

@@ -1,20 +1,34 @@
-import json
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from models import Base, User, Lecture, Question
-from faker import Faker
-import random
+"""Database initialization and seeding helpers.
 
+If SQLAlchemy or Faker is unavailable, the functions will raise an informative
+RuntimeError when called so callers can handle it and the server won't crash
+at import time.
+"""
+import json
 DB_URL = 'sqlite:///ai_active_learning.db'
 
 
 def init_db():
+    try:
+        from sqlalchemy import create_engine
+        from models import Base
+    except Exception as e:
+        raise RuntimeError('Database not available: %s' % str(e))
+
     engine = create_engine(DB_URL, echo=False)
     Base.metadata.create_all(engine)
     return engine
 
 
 def seed_questions():
+    try:
+        from sqlalchemy.orm import sessionmaker
+        from models import User, Lecture, Question
+        from faker import Faker
+        import random
+    except Exception as e:
+        raise RuntimeError('Seeding not available: %s' % str(e))
+
     fake = Faker()
     engine = init_db()
     Session = sessionmaker(bind=engine)
