@@ -1,0 +1,249 @@
+C:\Users\Apoor\ai-active-learning-platform-1\venv311\Lib\site-packages\transformers\utils\generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+C:\Users\Apoor\ai-active-learning-platform-1\venv311\Lib\site-packages\transformers\utils\generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+2025-10-20 20:09:33,215 INFO: background_load: starting to load summarizer model sshleifer/distilbart-cnn-12-6
+2025-10-20 20:09:33,216 INFO: startup: background HF model loader started
+2025-10-20 20:09:33,233 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.60:5000
+2025-10-20 20:09:33,233 INFO: [33mPress CTRL+C to quit[0m
+2025-10-20 20:09:33,234 INFO:  * Restarting with stat
+C:\Users\Apoor\ai-active-learning-platform-1\venv311\Lib\site-packages\transformers\utils\generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+C:\Users\Apoor\ai-active-learning-platform-1\venv311\Lib\site-packages\transformers\utils\generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+2025-10-20 20:09:35,172 INFO: background_load: starting to load summarizer model sshleifer/distilbart-cnn-12-6
+2025-10-20 20:09:35,172 INFO: startup: background HF model loader started
+2025-10-20 20:09:35,187 WARNING:  * Debugger is active!
+2025-10-20 20:09:35,190 INFO:  * Debugger PIN: 270-538-515
+2025-10-20 20:09:35,241 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:35] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   0%|          | 0.00/1.22G [00:00<?, ?B/s]2025-10-20 20:09:36,615 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:36] "POST /init-db HTTP/1.1" 200 -
+2025-10-20 20:09:36,850 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:36] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:09:37,913 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:37] "POST /seed-db HTTP/1.1" 200 -
+2025-10-20 20:09:38,150 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:38] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:09:39,151 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:39] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:09:40,847 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:40] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:09:43,149 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:43] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:09:44,853 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:44] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:09:47,164 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:47] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   1%|          | 10.5M/1.22G [00:12<24:25, 827kB/s]2025-10-20 20:09:48,849 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:48] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:09:50,205 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:50] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:09:51,151 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:51] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:09:52,847 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:52] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:09:55,168 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:55] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:09:56,845 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:56] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:09:59,161 INFO: 127.0.0.1 - - [20/Oct/2025 20:09:59] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:00,211 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:00] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:00,859 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:00] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:03,155 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:03] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:04,852 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:04] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   1%|          | 10.5M/1.22G [00:30<24:25, 827kB/s]2025-10-20 20:10:07,157 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:07] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   2%|1         | 21.0M/1.22G [00:31<31:15, 640kB/s]2025-10-20 20:10:08,274 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:08] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:10,224 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:10] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:11,152 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:11] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:11,417 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:11] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:14,852 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:14] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:15,161 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:15] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:18,176 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:18] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:18,849 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:18] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:20,243 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:20] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   3%|2         | 31.5M/1.22G [00:45<28:28, 697kB/s]2025-10-20 20:10:22,151 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:22] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:22,854 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:22] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:26,157 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:26] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:26,845 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:26] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:30,154 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:30] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:30,262 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:30] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:30,856 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:30] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:34,153 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:34] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:34,848 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:34] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   3%|2         | 31.5M/1.22G [01:00<28:28, 697kB/s]Downloading pytorch_model.bin:   3%|3         | 41.9M/1.22G [01:00<28:16, 696kB/s]2025-10-20 20:10:38,172 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:38] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:38,846 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:38] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:40,270 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:40] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:42,175 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:42] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:42,851 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:42] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:46,175 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:46] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:46,856 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:46] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:50,152 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:50] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:50,290 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:50] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:50,841 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:50] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:53,471 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:53] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   4%|4         | 52.4M/1.22G [01:18<30:16, 644kB/s]2025-10-20 20:10:54,849 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:54] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:57,157 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:57] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:10:58,851 INFO: 127.0.0.1 - - [20/Oct/2025 20:10:58] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:00,303 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:00] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:01,159 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:01] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:02,857 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:02] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:05,156 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:05] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   4%|4         | 52.4M/1.22G [01:30<30:16, 644kB/s]2025-10-20 20:11:06,850 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:06] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:09,172 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:09] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:10,311 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:10] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:10,841 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:10] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:13,159 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:13] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:14,848 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:14] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:17,158 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:17] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:18,841 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:18] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:20,328 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:20] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:21,198 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:21] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:22,843 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:22] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:24,534 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:24] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:26,854 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:26] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:28,164 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:28] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:30,347 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:30] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:30,850 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:30] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:32,157 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:32] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:34,840 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:34] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:36,166 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:36] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   5%|5         | 62.9M/1.22G [02:01<46:43, 414kB/s]2025-10-20 20:11:38,850 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:38] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:40,155 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:40] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:40,358 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:40] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:42,853 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:42] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:44,160 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:44] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:46,842 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:46] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:48,168 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:48] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:50,846 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:50] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:52,159 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:52] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:52,403 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:52] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:11:54,851 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:54] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   5%|5         | 62.9M/1.22G [02:20<46:43, 414kB/s]2025-10-20 20:11:56,157 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:56] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   6%|6         | 73.4M/1.22G [02:20<42:34, 450kB/s]2025-10-20 20:11:58,851 INFO: 127.0.0.1 - - [20/Oct/2025 20:11:58] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:00,166 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:00] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:02,414 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:02] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:02,846 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:02] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:04,158 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:04] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:06,851 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:06] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:08,160 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:08] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:10,851 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:10] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:12,161 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:12] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:12,429 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:12] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   7%|6         | 83.9M/1.22G [02:37<38:15, 496kB/s]2025-10-20 20:12:14,840 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:14] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:16,159 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:16] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:18,850 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:18] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:20,159 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:20] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:22,453 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:22] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:22,845 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:22] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:24,157 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:24] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   7%|6         | 83.9M/1.22G [02:50<38:15, 496kB/s]2025-10-20 20:12:26,848 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:26] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   8%|7         | 94.4M/1.22G [02:52<34:26, 546kB/s]2025-10-20 20:12:28,164 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:28] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:30,850 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:30] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:32,176 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:32] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:32,470 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:32] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:34,851 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:34] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:36,157 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:36] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:38,849 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:38] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   9%|8         | 105M/1.22G [03:03<30:01, 620kB/s] 2025-10-20 20:12:40,156 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:40] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:42,477 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:42] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:42,851 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:42] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:44,153 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:44] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:46,850 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:46] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:48,155 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:48] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:50,852 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:50] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:52,157 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:52] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:52,500 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:52] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   9%|9         | 115M/1.22G [03:18<28:16, 653kB/s]2025-10-20 20:12:54,853 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:54] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:56,161 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:56] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:12:58,850 INFO: 127.0.0.1 - - [20/Oct/2025 20:12:58] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:00,155 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:00] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:02,515 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:02] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:02,841 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:02] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:04,157 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:04] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   9%|9         | 115M/1.22G [03:30<28:16, 653kB/s]2025-10-20 20:13:06,849 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:06] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:  10%|#         | 126M/1.22G [03:31<26:31, 689kB/s]2025-10-20 20:13:08,155 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:08] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:10,849 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:10] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:12,163 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:12] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:12,539 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:12] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:14,843 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:14] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:16,165 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:16] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:  11%|#1        | 136M/1.22G [03:42<24:20, 744kB/s]2025-10-20 20:13:18,847 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:18] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:20,155 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:20] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:22,547 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:22] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:22,849 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:22] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:24,157 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:24] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:26,843 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:26] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:28,147 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:28] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:30,840 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:30] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:32,158 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:32] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:32,562 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:32] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:  11%|#1        | 136M/1.22G [03:57<31:28, 575kB/s]
+2025-10-20 20:13:34,851 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:34] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   0%|          | 0.00/1.22G [00:00<?, ?B/s]2025-10-20 20:13:36,163 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:36] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:38,855 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:38] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:40,155 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:40] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:42,575 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:42] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:42,845 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:42] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:44,152 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:44] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:46,855 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:46] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:48,161 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:48] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:50,844 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:50] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:52,153 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:52] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:54,634 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:54] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:54,841 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:54] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:56,154 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:56] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:13:58,842 INFO: 127.0.0.1 - - [20/Oct/2025 20:13:58] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:00,151 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:00] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:02,845 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:02] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:04,163 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:04] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:04,647 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:04] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:06,853 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:06] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:08,157 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:08] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:10,846 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:10] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:12,160 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:12] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:14,662 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:14] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:14,849 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:14] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:16,159 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:16] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:18,849 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:18] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:20,156 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:20] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:23,166 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:23] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:23,845 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:23] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:24,670 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:24] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:27,155 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:27] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:27,853 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:27] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:31,154 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:31] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:31,850 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:31] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:34,689 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:34] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:35,159 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:35] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:35,846 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:35] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:39,151 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:39] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:39,856 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:39] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:43,154 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:43] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:43,850 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:43] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:44,706 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:44] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:47,153 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:47] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:47,844 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:47] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   1%|          | 10.5M/1.22G [01:14<2:23:00, 141kB/s]2025-10-20 20:14:51,160 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:51] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:51,852 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:51] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:54,716 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:54] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:55,150 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:55] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:55,841 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:55] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:59,152 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:59] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:14:59,848 INFO: 127.0.0.1 - - [20/Oct/2025 20:14:59] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:03,165 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:03] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:03,432 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:03] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:04,733 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:04] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   1%|          | 10.5M/1.22G [01:30<2:23:00, 141kB/s]2025-10-20 20:15:06,853 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:06] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:07,162 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:07] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   2%|1         | 21.0M/1.22G [01:33<1:20:05, 250kB/s]2025-10-20 20:15:11,151 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:11] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:11,415 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:11] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:14,748 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:14] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:14,844 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:14] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:15,155 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:15] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:19,157 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:19] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:19,425 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:19] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:22,843 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:22] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:23,158 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:23] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:24,766 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:24] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   2%|1         | 21.0M/1.22G [01:50<1:20:05, 250kB/s]2025-10-20 20:15:27,164 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:27] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:27,426 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:27] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:30,848 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:30] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:31,161 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:31] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:34,788 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:34] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:35,162 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:35] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:35,428 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:35] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:38,856 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:38] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:39,168 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:39] "GET /models/status HTTP/1.1" 200 -
+Downloading pytorch_model.bin:   3%|2         | 31.5M/1.22G [02:06<1:11:37, 277kB/s]2025-10-20 20:15:43,155 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:43] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:43,416 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:43] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:44,800 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:44] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:46,859 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:46] "GET /models/status HTTP/1.1" 200 -
+2025-10-20 20:15:47,179 INFO: 127.0.0.1 - - [20/Oct/2025 20:15:47] "GET /models/status HTTP/1.1" 200 -

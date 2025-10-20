@@ -1,0 +1,7 @@
+[build]
+  publish = "build"
+  command = "npm run build"
+
+[context.production.environment]
+  # Set REACT_APP_BACKEND_URL to your Hugging Face Space URL, e.g. https://<your-space>.hf.space
+  REACT_APP_BACKEND_URL = ""
