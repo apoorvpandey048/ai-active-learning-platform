@@ -24,6 +24,19 @@ Install Recharts (used by some components):
 npm install recharts
 ```
 
+Run the development server:
+
+```bash
+npm install
+npm start
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
 ## Components
 
 ### LearnerProgress
