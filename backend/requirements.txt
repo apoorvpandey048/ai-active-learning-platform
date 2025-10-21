@@ -19,5 +19,5 @@ SQLAlchemy==2.0.19
 requests==2.31.0
 youtube-transcript-api==0.6.2
 python-dotenv==1.0.0
-pyyaml==6.0
+pyyaml>=6.0.1
 
