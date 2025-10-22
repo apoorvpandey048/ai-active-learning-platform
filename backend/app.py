@@ -69,6 +69,28 @@ except Exception:
 SUMMARIZER_MODEL = 'sshleifer/distilbart-cnn-12-6'
 GENERATOR_MODEL = 'google/flan-t5-small'
 
+# Hugging Face Inference API key (optional). If set, the app will use hosted inference
+# instead of local pipelines when models aren't available or background loading is disabled.
+_HF_INFERENCE_API_KEY = os.environ.get('HF_INFERENCE_API_KEY')
+
+
+def _hf_inference_request(model: str, inputs: str, params: dict = None):
+    """Call the Hugging Face Inference API for a given model. Returns parsed JSON/text or raises."""
+    import requests
+    if not _HF_INFERENCE_API_KEY:
+        raise RuntimeError('No HF_INFERENCE_API_KEY configured')
+    url = f"https://api-inference.huggingface.co/models/{model}"
+    headers = {"Authorization": f"Bearer {_HF_INFERENCE_API_KEY}"}
+    payload = {"inputs": inputs}
+    if params:
+        payload["parameters"] = params
+    resp = requests.post(url, headers=headers, json=payload, timeout=60)
+    resp.raise_for_status()
+    try:
+        return resp.json()
+    except Exception:
+        return resp.text
+
 
 def _background_load_models():
     """Load HF pipelines in a background thread so first-request latency
@@ -229,6 +251,18 @@ def summarize():
     else:
         # If model is not yet ready, inform caller to retry or return mock
         if not _hf_summarizer_ready or _hf_summarizer is None:
+            # If an HF Inference API key is configured, try the hosted model as a fallback
+            if _HF_INFERENCE_API_KEY:
+                try:
+                    out = _hf_inference_request(SUMMARIZER_MODEL, text[:1000], params={'max_length': 120, 'min_length': 30})
+                    # Some HF responses are list-based JSON
+                    if isinstance(out, list) and out and isinstance(out[0], dict) and 'summary_text' in out[0]:
+                        return jsonify({'summary': out[0]['summary_text'], 'source': 'hf-inference'})
+                    # If text returned, deliver as-is
+                    if isinstance(out, str):
+                        return jsonify({'summary': out, 'source': 'hf-inference'})
+                except Exception as e:
+                    print('summarize: HF Inference API fallback failed -', str(e))
             print('summarize: summarizer not ready yet')
             return jsonify({'message': 'Model loading, please try again later', 'source': 'loading'}), 202
         # Use the pre-loaded summarizer pipeline
@@ -301,6 +335,33 @@ def generate_quiz():
     else:
         # If generator model hasn't finished loading yet, inform client
         if not _hf_generator_ready or _hf_generator is None:
+            # HF Inference API fallback
+            if _HF_INFERENCE_API_KEY and text:
+                try:
+                    prompt = f"Generate 2 multiple-choice questions (provide options and correct answer index) from the following text:\n\n{text}\n\nOutput as JSON array"
+                    out = _hf_inference_request(GENERATOR_MODEL, prompt, params={'max_length': 256})
+                    if isinstance(out, list) and out and isinstance(out[0], dict) and 'generated_text' in out[0]:
+                        out_text = out[0]['generated_text']
+                        start = out_text.find('[')
+                        end = out_text.rfind(']')
+                        if start != -1 and end != -1 and end > start:
+                            try:
+                                questions = json.loads(out_text[start:end+1])
+                                return jsonify({'questions': questions, 'source': 'hf-inference'})
+                            except Exception:
+                                pass
+                    if isinstance(out, str):
+                        # best-effort JSON extraction
+                        start = out.find('[')
+                        end = out.rfind(']')
+                        if start != -1 and end != -1 and end > start:
+                            try:
+                                questions = json.loads(out[start:end+1])
+                                return jsonify({'questions': questions, 'source': 'hf-inference'})
+                            except Exception:
+                                pass
+                except Exception as e:
+                    print('generate_quiz: HF Inference API fallback failed -', str(e))
             print('generate_quiz: generator not ready yet')
             return jsonify({'message': 'Model loading, please try again later', 'source': 'loading'}), 202
         # Use the pre-loaded generator
