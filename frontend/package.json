@@ -10,7 +10,9 @@
   },
   "scripts": {
     "start": "webpack serve --mode development --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "prebuild": "node -e \"console.log('Using webpack build by default; set REACT_APP_USE_CRA=1 to use react-scripts')\"",
+    "cra-build": "react-scripts build"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
@@ -22,6 +24,7 @@
     "style-loader": "^3.3.4",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.2.2"
+    "webpack-dev-server": "^5.2.2",
+    "react-scripts": "5.0.1"
   }
 }
