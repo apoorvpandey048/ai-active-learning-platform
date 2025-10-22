@@ -27,8 +27,9 @@ jobs:
           python backend/db_init.py
       - name: Run tests
         env:
-          API_BASE_URL: "https://huggingface.co/spaces/Apoorv048/ai-active-learning-platform"
-          # Optional: wait up to 10s for the Space to become responsive
-          API_HEALTH_RETRY_SECONDS: "10"
+          # Use the direct hf.space hostname for the deployed Space API endpoints
+          API_BASE_URL: "https://Apoorv048-ai-active-learning-platform.hf.space"
+          # Allow a longer warm-up time for the Space (useful on free-tier instances)
+          API_HEALTH_RETRY_SECONDS: "30"
         run: |
           python -m pytest -q
