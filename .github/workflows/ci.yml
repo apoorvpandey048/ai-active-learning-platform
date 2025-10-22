@@ -26,5 +26,10 @@ jobs:
         run: |
           python backend/db_init.py
       - name: Run tests
+        env:
+          # Use the direct hf.space hostname for the deployed Space API endpoints
+          API_BASE_URL: "https://Apoorv048-ai-active-learning-platform.hf.space"
+          # Allow a longer warm-up time for the Space (useful on free-tier instances)
+          API_HEALTH_RETRY_SECONDS: "30"
         run: |
           python -m pytest -q
