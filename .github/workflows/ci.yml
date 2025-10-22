@@ -26,5 +26,9 @@ jobs:
         run: |
           python backend/db_init.py
       - name: Run tests
+        env:
+          API_BASE_URL: "https://huggingface.co/spaces/Apoorv048/ai-active-learning-platform"
+          # Optional: wait up to 10s for the Space to become responsive
+          API_HEALTH_RETRY_SECONDS: "10"
         run: |
           python -m pytest -q
