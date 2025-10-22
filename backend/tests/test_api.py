@@ -39,8 +39,9 @@ def test_health():
 
 def test_seed_and_generate_quiz():
     seed_url = f"{API_BASE}/seed-questions"
-    r = requests.post(seed_url, json={}, timeout=TIMEOUT)
-    assert r.status_code in (200, 201, 202)
+    # The application exposes /seed-questions as GET (seeding via GET for demo).
+    r = requests.get(seed_url, timeout=TIMEOUT)
+    assert r.status_code == 200
 
     gen_url = f"{API_BASE}/generate-quiz"
     r2 = requests.get(gen_url, timeout=TIMEOUT)
